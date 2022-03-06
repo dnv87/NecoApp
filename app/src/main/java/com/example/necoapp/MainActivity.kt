@@ -7,7 +7,8 @@ import android.view.View
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
-    var b = false
+    var b = true
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
