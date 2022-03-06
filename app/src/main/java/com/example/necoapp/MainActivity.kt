@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
             elTetx.text = "Abra-kodabra!!!"
         }
         else {
-            elTetx.text = "Shwabra-kodabra!!!"
+            elTetx.text = "Shwabra-kodabra!!!!!!!!!!!!!!!!!!!!!"
         }
         count = !count
         Log.d("MyTst", "count = ${count.toString()}")
