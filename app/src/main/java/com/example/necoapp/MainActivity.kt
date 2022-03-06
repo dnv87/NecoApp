@@ -20,7 +20,8 @@ class MainActivity : AppCompatActivity() {
         bindingClass= ActivityMainBinding.inflate(layoutInflater)
 //        setContentView(R.layout.activity_main)
         setContentView(bindingClass.root)
-        bindingClass.btnSum.setOnClickListener {
+
+        /*bindingClass.btnSum.setOnClickListener {
             val result = a + b
             bindingClass.tView.text = "сумма равна $result"
         }
@@ -35,7 +36,9 @@ class MainActivity : AppCompatActivity() {
         bindingClass.btnDiv.setOnClickListener {
             val result : Float = a.toFloat() / b.toFloat()
             bindingClass.tView.text = "деление равно $result"
-        }
+        }*/
+
+        if (bindingClass.tView.text == "0")
 
     }
 }
