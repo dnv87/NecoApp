@@ -7,28 +7,55 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:id="@+id/tView"
+        android:layout_width="237dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.793"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.421" />
-
-    <Button
-        android:id="@+id/b_tst"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:text="ButtonTest"
+        android:text="a=1024 b=8"
+        android:textAlignment="textEnd"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.367"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
 
+    <Button
+        android:id="@+id/btnSum"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="ButtonSumm"
+        app:layout_constraintEnd_toEndOf="@+id/tView"
+        app:layout_constraintStart_toStartOf="@+id/tView"
+        app:layout_constraintTop_toBottomOf="@+id/tView" />
+
+    <Button
+        android:id="@+id/btnDiff"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="ButtonDifference"
+        app:layout_constraintEnd_toEndOf="@+id/btnSum"
+        app:layout_constraintStart_toStartOf="@+id/btnSum"
+        app:layout_constraintTop_toBottomOf="@+id/btnSum" />
+
+    <Button
+        android:id="@+id/btnMulti"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="ButtonMultiplication"
+        app:layout_constraintEnd_toEndOf="@+id/btnDiff"
+        app:layout_constraintStart_toStartOf="@+id/btnDiff"
+        app:layout_constraintTop_toBottomOf="@+id/btnDiff" />
+
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="ButtonDivision"
+        app:layout_constraintEnd_toEndOf="@+id/btnMulti"
+        app:layout_constraintStart_toStartOf="@+id/btnMulti"
+        app:layout_constraintTop_toBottomOf="@+id/btnMulti" />
 </androidx.constraintlayout.widget.ConstraintLayout>

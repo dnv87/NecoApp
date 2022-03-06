@@ -8,7 +8,10 @@ import android.widget.TextView
 import com.example.necoapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-//    var b = true
+
+    val a = 1023
+    val b = 8
+
     lateinit var bindingClass: ActivityMainBinding
 
 
@@ -17,19 +20,22 @@ class MainActivity : AppCompatActivity() {
         bindingClass= ActivityMainBinding.inflate(layoutInflater)
 //        setContentView(R.layout.activity_main)
         setContentView(bindingClass.root)
-        bindingClass.textView.text = "binding Hello!!!"
-    }
+        bindingClass.btnSum.setOnClickListener {
+            val result = a + b
+            bindingClass.tView.text = "сумма равна $result"
+        }
+        bindingClass.btnDiff.setOnClickListener {
+            val result = a - b
+            bindingClass.tView.text = "разность равна $result"
+        }
+        bindingClass.btnMulti.setOnClickListener {
+            val result = a * b
+            bindingClass.tView.text = "произведение равно $result"
+        }
+        bindingClass.btnDiv.setOnClickListener {
+            val result : Float = a.toFloat() / b.toFloat()
+            bindingClass.tView.text = "деление равно $result"
+        }
 
-    /*var count : Boolean = true
-    fun onClicketTst(view: View){
-        val elTetx = findViewById<TextView>(R.id.textView)
-        if (count) {
-            elTetx.text = "Abra-kodabra??????????"
-        }
-        else {
-            elTetx.text = "Shwabra-kodabra!!!!!"
-        }
-        count = !count
-        Log.d("MyTst", "count = ${count.toString()}")
-    }*/
+    }
 }
