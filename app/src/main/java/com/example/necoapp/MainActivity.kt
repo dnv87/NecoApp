@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     fun onClicketTst(view: View){
         val elTetx = findViewById<TextView>(R.id.textView)
         if (count) {
-            elTetx.text = "Abra-kodabra!!!"
+            elTetx.text = "Abra-kodabra??????????"
         }
         else {
             elTetx.text = "Shwabra-kodabra!!!!!"
