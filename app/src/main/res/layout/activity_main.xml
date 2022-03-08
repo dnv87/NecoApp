@@ -6,219 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tView"
-        android:layout_width="324dp"
-        android:layout_height="60dp"
-        android:text="0"
-        android:textAlignment="textEnd"
-        android:textSize="45dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <EditText
+        android:id="@+id/inputTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="введите Имя"
+        android:inputType="textPersonName"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.644"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/inputTxt"
+        app:layout_constraintStart_toStartOf="@+id/inputTxt"
+        app:layout_constraintTop_toBottomOf="@+id/inputTxt" />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/inputTxt"
+        app:layout_constraintEnd_toEndOf="@+id/inputTxt"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/inputTxt"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.08" />
-
-    <TableLayout
-        android:id="@+id/tableLayout"
-        android:layout_width="330dp"
-        android:layout_height="316dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/tView"
-        app:layout_constraintHorizontal_bias="0.305"
-        app:layout_constraintStart_toStartOf="@+id/tView"
-        app:layout_constraintTop_toBottomOf="@+id/tView"
-        app:layout_constraintVertical_bias="0.832">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/btnDiv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="/" />
-
-            <Space
-                android:layout_width="5dp"
-                android:layout_height="wrap_content" />
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="del" />
-
-            <Space
-                android:layout_width="5dp"
-                android:layout_height="wrap_content" />
-
-            <Button
-                android:id="@+id/btnClean"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="C" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/btnSum"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="+" />
-
-            <Space
-                android:layout_width="5dp"
-                android:layout_height="wrap_content" />
-
-            <Button
-                android:id="@+id/btnDiff"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="-" />
-
-            <Space
-                android:layout_width="5dp"
-                android:layout_height="wrap_content" />
-
-            <Button
-                android:id="@+id/btnMulti"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="*" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/b7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="7" />
-
-            <Space
-                android:layout_width="5dp"
-                android:layout_height="wrap_content" />
-
-            <Button
-                android:id="@+id/b8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="8" />
-
-            <Space
-                android:layout_width="5dp"
-                android:layout_height="wrap_content" />
-
-            <Button
-                android:id="@+id/b9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="9" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="363dp"
-            android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/b4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="4" />
-
-            <Space
-                android:layout_width="5dp"
-                android:layout_height="wrap_content" />
-
-            <Button
-                android:id="@+id/b5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5" />
-
-            <Space
-                android:layout_width="5dp"
-                android:layout_height="wrap_content" />
-
-            <Button
-                android:id="@+id/b6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="6" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/b1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1" />
-
-            <Space
-                android:layout_width="5dp"
-                android:layout_height="wrap_content" />
-
-            <Button
-                android:id="@+id/b2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2" />
-
-            <Space
-                android:layout_width="5dp"
-                android:layout_height="wrap_content" />
-
-            <Button
-                android:id="@+id/b3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="3" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/b0"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0" />
-
-            <Space
-                android:layout_width="5dp"
-                android:layout_height="wrap_content" />
-
-            <Button
-                android:id="@+id/bReal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="." />
-
-            <Space
-                android:layout_width="5dp"
-                android:layout_height="wrap_content" />
-
-            <Button
-                android:id="@+id/bResult"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="=" />
-
-        </TableRow>
-    </TableLayout>
-
+        app:layout_constraintVertical_bias="0.64" />
 </androidx.constraintlayout.widget.ConstraintLayout>
