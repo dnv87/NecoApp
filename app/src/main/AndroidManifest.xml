@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NecoApp">
         <activity
+            android:name=".SignInUpActivity"
+            android:exported="false">
+        </activity>
+
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

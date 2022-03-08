@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/KTExemple/NecoApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/KTExemple/NecoApp/app/src/main/res/layout/activity_in_up.xml" value="0.33" />
+        <entry key="..\:/KTExemple/NecoApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/KTExemple/NecoApp/app/src/main/res/layout/activity_test.xml" value="0.33" />
+        <entry key="..\:/KTExemple/NecoApp/app/src/main/res/layout/layout_test2.xml" value="0.18541666666666667" />
       </map>
     </option>
   </component>

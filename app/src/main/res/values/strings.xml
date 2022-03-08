@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">NecoApp</string>
+    <string name="signin" translatable="false">SIGN IN</string>
+    <string name="signout" translatable="false">SIGN UP</string>
+    <string name="avatar" translatable="false">avatar</string>
+    <string name="login" translatable="false">Login</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="name1" translatable="false">Имя</string>
+    <string name="name2" translatable="false">Фамилия</string>
+    <string name="name3" translatable="false">Отчество</string>
+    <string name="done" translatable="false">Готово</string>
 </resources>

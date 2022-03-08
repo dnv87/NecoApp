@@ -6,41 +6,48 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/inputTxt"
+    <Button
+        android:id="@+id/btn_in"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="244dp"
         android:layout_marginEnd="32dp"
-        android:ems="10"
-        android:hint="введите Имя"
-        android:inputType="textPersonName"
-        android:visibility="visible"
+        android:text="@string/signin"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
 
     <Button
-        android:id="@+id/btn"
+        android:id="@+id/btn_out"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="@+id/inputTxt"
-        app:layout_constraintStart_toStartOf="@+id/inputTxt"
-        app:layout_constraintTop_toBottomOf="@+id/inputTxt" />
+        android:layout_marginTop="16dp"
+        android:text="@string/signout"
+        app:layout_constraintEnd_toEndOf="@+id/btn_in"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_in"
+        app:layout_constraintTop_toBottomOf="@+id/btn_in" />
 
     <TextView
-        android:id="@+id/textResult"
+        android:id="@+id/tv_info"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/inputTxt"
-        app:layout_constraintEnd_toEndOf="@+id/inputTxt"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="@+id/inputTxt"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.64" />
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_in"
+        app:layout_constraintEnd_toEndOf="@+id/btn_in"
+        app:layout_constraintStart_toStartOf="@+id/btn_in" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_in"
+        app:layout_constraintEnd_toEndOf="@+id/btn_in"
+        app:layout_constraintStart_toStartOf="@+id/btn_in"
+        tools:srcCompat="@tools:sample/avatars" />
 </androidx.constraintlayout.widget.ConstraintLayout>
